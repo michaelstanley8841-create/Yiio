@@ -13,8 +13,9 @@
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{--bg:#f2f2f2;--card:rgba(255,255,255,.85);--text:#111;--t2:#666;--t3:#aaa;--border:rgba(0,0,0,.07);--acc:#111;--tag-bg:rgba(0,0,0,.05);--tag-on:#111;--r:14px;--font:'Helvetica Neue','PingFang SC','Microsoft YaHei',sans-serif}
 html,body{height:100%;font-family:var(--font);background:#ddd;color:var(--text);overflow:hidden;font-weight:300;font-size:14px;line-height:1.6}
-body{display:flex;align-items:center;justify-content:center}
+body{display:flex;align-items:center;justify-content:center;background:var(--bg)}
 .phone{width:100%;max-width:430px;height:100%;max-height:932px;position:relative;overflow:hidden;display:flex;flex-direction:column;background:var(--bg)}
+@media (display-mode: standalone){body{background:var(--bg)}.phone{max-width:100%;max-height:100%;width:100vw;height:100vh;height:100dvh;border-radius:0}}
 @media(min-width:460px){.phone{border-radius:40px;height:93vh;box-shadow:0 24px 80px rgba(0,0,0,.18),0 0 0 .5px rgba(0,0,0,.12)}}
 @media (display-mode: standalone) { .phone { max-width: 100%; max-height: 100%; border-radius: 0; } }
 
