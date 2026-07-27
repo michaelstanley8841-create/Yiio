@@ -569,7 +569,7 @@ function openCW(chatId,onBack){var chat=D.chats.filter(function(x){return x.id==
 }
 
   /* === 聊天设定页（头像/面具切换/角色设定/世界书/清空/删除） === */
-  ffunction openCC(chat,ct,onChatRefresh){
+  function openCC(chat,ct,onChatRefresh){
   var open={persona:false,mask:false,css:false,bg:false,wb:false};
   openScreen(function(el){
     render();
